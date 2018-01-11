@@ -1,0 +1,270 @@
+{
+  "User": [
+    {
+      "UserID": 1,
+      "Name": "Endoks",
+      "Surname": "Enerji",
+      "ParentID": null,
+      "Type": 0,
+      "Email": "admin@endoks.com",
+      "Password": "123456",
+      "IsActive": 1
+    },
+    {
+      "UserID": 2,
+      "Name": "Çağın",
+      "Surname": "Gülşen",
+      "ParentID": 1,
+      "Type": 0,
+      "Email": "admin@endoks.com",
+      "Password": "123456",
+      "IsActive": 1
+    },
+    {
+      "UserID": 3,
+      "Name": "Fuatcan",
+      "Surname": "Bulun",
+      "ParentID": 2,
+      "Type": 1,
+      "Email": "admin@endoks.com",
+      "Password": "123456",
+      "IsActive": 1
+    },
+    {
+      "UserID": 4,
+      "Name": "Admin",
+      "Surname": "",
+      "ParentID": 1,
+      "Type": 0,
+      "Email": "admin@endoks.com",
+      "Password": "123456",
+      "IsActive": 1
+    }
+  ],
+  "Unit": [
+    {
+      "UnitID": 1,
+      "IsVirtual": 1,
+      "Name": "Endoks",
+      "ParentID": null,
+      "Type": 1
+    },
+    {
+      "UnitID": 2,
+      "IsVirtual": 1,
+      "Name": "Optimum",
+      "ParentID": 1,
+      "Type": 1
+    },
+    {
+      "UnitID": 3,
+      "IsVirtual": 0,
+      "Name": "Optimum AVM Ankara",
+      "ParentID": 2,
+      "Type": 1
+    },
+    {
+      "UnitID": 4,
+      "IsVirtual": 0,
+      "Name": "Optimum AVM Istanbul",
+      "ParentID": 2,
+      "Type": 1
+    },
+    {
+      "UnitID": 5,
+      "IsVirtual": 0,
+      "Name": "Optimum AVM Izmir",
+      "ParentID": 2,
+      "Type": 1
+    },
+    {
+      "UnitID": 6,
+      "IsVirtual": 0,
+      "Name": "Teknosa Optimum Izmir",
+      "ParentID": 5,
+      "Type": 1
+    },
+    {
+      "UnitID": 7,
+      "IsVirtual": 0,
+      "Name": "Mavi Optimum Izmir",
+      "ParentID": 5,
+      "Type": 1
+    },
+    {
+      "UnitID": 8,
+      "IsVirtual": 0,
+      "Name": "Starbucks Optimum Izmir",
+      "ParentID": 5,
+      "Type": 1
+    },
+    {
+      "UnitID": 9,
+      "IsVirtual": 0,
+      "Name": "Zara Optimum Izmir",
+      "ParentID": 5,
+      "Type": 1
+    },
+    {
+      "UnitID": 10,
+      "IsVirtual": 0,
+      "Name": "Adidas Optimum Izmir",
+      "ParentID": 5,
+      "Type": 1
+    }
+  ],
+  "UnitPermission": [
+    {
+      "UnitID": 1,
+      "UserID": 1,
+      "UPermission": "777777"
+    },
+    {
+      "UnitID": 2,
+      "UserID": 3,
+      "UPermission": "777777"
+    },
+    {
+      "UnitID": 5,
+      "UserID": 4,
+      "UPermission": "777777"
+    },
+    {
+      "UnitID": 6,
+      "UserID": 2,
+      "UPermission": "777777"
+    }
+  ],
+  "RemotePoint": [
+    {
+      "PointID": 1,
+      "UnitID": 6,
+      "TagID": 4
+    },
+    {
+      "PointID": 2,
+      "UnitID": 6,
+      "TagID": 4
+    },
+    {
+      "PointID": 3,
+      "UnitID": 7,
+      "TagID": 4
+    },
+    {
+      "PointID": 4,
+      "UnitID": 7,
+      "TagID": 4
+    },
+    {
+      "PointID": 5,
+      "UnitID": 7,
+      "TagID": 4
+    },
+    {
+      "PointID": 6,
+      "UnitID": 8,
+      "TagID": 4
+    },
+    {
+      "PointID": 7,
+      "UnitID": 8,
+      "TagID": 4
+    },
+    {
+      "PointID": 8,
+      "UnitID": 9,
+      "TagID": 4
+    },
+    {
+      "PointID": 9,
+      "UnitID": 10,
+      "TagID": 4
+    },
+    {
+      "PointID": 10,
+      "UnitID": 10,
+      "TagID": 4
+    }
+  ],
+  "Tag": [
+    {
+      "TagID": 1,
+      "Name": "Tuketilen Aktif Enerji",
+      "Alias": "kWh_Meter_Import",
+      "MeasurementUnit": "kWh"
+    },
+    {
+      "TagID": 2,
+      "Name": "Oda Sicakligi",
+      "Alias": "Room_Temp",
+      "MeasurementUnit": "C"
+    },
+    {
+      "TagID": 3,
+      "Name": "Qa",
+      "Alias": "kVAr_PhaseA_10min",
+      "MeasurementUnit": "Qa"
+    },
+    {
+      "TagID": 4,
+      "Name": "P Aktif Guc",
+      "Alias": "kW_tot_10min",
+      "MeasurementUnit": "kW"
+    },
+    {
+      "TagID": 5,
+      "Name": "Vab",
+      "Alias": "Vab_10min",
+      "MeasurementUnit": "V"
+    }
+  ],
+  "InstantData": [
+    {
+      "PointID": 1,
+      "UpdatedAt": "2018-01-06 08:00",
+      "Value": 100
+    },
+    {
+      "PointID": 2,
+      "UpdatedAt": "2018-01-06 08:00",
+      "Value": 120
+    },
+    {
+      "PointID": 3,
+      "UpdatedAt": "2018-01-06 08:00",
+      "Value": 130
+    },
+    {
+      "PointID": 4,
+      "UpdatedAt": "2018-01-06 08:00",
+      "Value": 140
+    }
+  ],
+  "IntervalData": [
+    {
+      "PointID": 1,
+      "CreatedAt": "2018-01-06 08:00",
+      "InsertedAt": "2018-01-06 08:10",
+      "Value": 130
+    },
+    {
+      "PointID": 1,
+      "CreatedAt": "2018-01-06 08:10",
+      "InsertedAt": "2018-01-06 08:20",
+      "Value": 160
+    },
+    {
+      "PointID": 2,
+      "CreatedAt": "2018-01-06 08:00",
+      "InsertedAt": "2018-01-06 08:10",
+      "Value": 125
+    },
+    {
+      "PointID": 3,
+      "CreatedAt": "2018-01-06 08:00",
+      "InsertedAt": "2018-01-06 08:10",
+      "Value": 146
+    }
+  ]
+}
